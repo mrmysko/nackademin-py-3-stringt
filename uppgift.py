@@ -5,8 +5,6 @@
 def stringt(*args, end="\n", sep=" "):
     """Return a string."""
 
-    print(out_string)
-
     out_string = sep.join(args) + end
     return out_string
 
