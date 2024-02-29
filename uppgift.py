@@ -5,8 +5,8 @@
 def stringt(*args, end="\n", sep=" "):
     """Return a string."""
 
-    out_string = sep.join(args) + end
-    return out_string
+    # Todo - Hanterar inte listor/tuples och ints
+    return sep.join(args) + end
 
 
 if __name__ == "__main__":
@@ -24,3 +24,4 @@ if __name__ == "__main__":
     print(stringt("Det", "här", "är", "en", "sträng"))
     print(stringt("Det", "här", "är", "en", "sträng", end="\t", sep="!"))
     # print(stringt([1, 2, 3, 4], [5, 6, 7, 8], sep="F"))
+    # print(stringt(4, 5, 6, 7, 8, "Hej"))
