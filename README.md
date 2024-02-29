@@ -70,16 +70,10 @@ istället för att skriva ut den.
    - **Förklaring:** Endast ett argument ges och funktionen avslutas med
      standardvärdet för `end`, som är en radbrytning.
 
-Observera att `stringt`-funktionen ska använda `return` för att returnera den
-sammansatta strängen. Inga utskrifter med `print()` ska ske inuti funktionen.
-Dessa exempel illustrerar hur `stringt` kan användas för att sammanfoga olika
-strängar med valfri separator och avslutande tecken, liknande funktionen
-`print()` men med skillnaden att `stringt` returnerar den sammansatta strängen
-istället för att skriva ut den.
-
 ### Tips
 
-När du arbetar med funktionen `stringt` för att sammanfoga strängar, kan följande tips vara till hjälp:
+När du arbetar med funktionen `stringt` för att sammanfoga strängar, kan
+följande tips vara till hjälp:
 
 1. För att skapa en sträng utifrån en lista med argument, kan du använda metoden
    [`str.join`](https://docs.python.org/3/library/stdtypes.html#str.join). Denna
