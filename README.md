@@ -29,9 +29,52 @@ strängar med valfri separator och avslutande tecken, liknande funktionen
 `print()` men med skillnaden att `stringt()` returnerar den sammansatta strängen
 istället för att skriva ut den.
 
+1. **Exempel 1:**
+
+   - **Input:** `stringt("Hej", "världen", sep=", ", end="!")`
+   - **Förväntat resultat:** `"Hej, världen!"`
+   - **Förklaring:** Argumenten "Hej" och "världen" sammanslås med separatorn ",
+     " och avslutas med "!".
+
+2. **Exempel 2:**
+
+   - **Input:** `stringt("Python", "är", "kul")`
+   - **Förväntat resultat:** `"Python är kul\n"`
+   - **Förklaring:** Argumenten sammanslås med standardseparatorn " " och
+     avslutas med standardvärdet för `end`, som är en radbrytning.
+
+3. **Exempel 3:**
+
+   - **Input:** `stringt("En", "två", "tre", sep=" - ")`
+   - **Förväntat resultat:** `"En - två - tre\n"`
+   - **Förklaring:** Argumenten sammanslås med separatorn " - " och avslutas med
+     en radbrytning.
+
+4. **Exempel 4:**
+
+   - **Input:** `stringt("Slut", end=".")`
+   - **Förväntat resultat:** `"Slut."`
+   - **Förklaring:** Endast ett argument ges och funktionen avslutas med ".",
+     som är det angivna värdet för `end`.
+
+5. **Exempel 5:**
+
+   - **Input:** `stringt("Ett", "argument", sep="")`
+   - **Förväntat resultat:** `"Ettargument\n"`
+   - **Förklaring:** Argumenten sammanslås utan någon separator och avslutas med
+     en radbrytning.
+
+6. **Exempel 6:**
+
+   - **Input:** `stringt("Ensam")`
+   - **Förväntat resultat:** `"Ensam\n"`
+   - **Förklaring:** Endast ett argument ges och funktionen avslutas med
+     standardvärdet för `end`, som är en radbrytning.
+
 ### Tips
 
-När du arbetar med funktionen `stringt` för att sammanfoga strängar, kan följande tips vara till hjälp:
+När du arbetar med funktionen `stringt` för att sammanfoga strängar, kan
+följande tips vara till hjälp:
 
 1. För att skapa en sträng utifrån en lista med argument, kan du använda metoden
    [`str.join`](https://docs.python.org/3/library/stdtypes.html#str.join). Denna
